@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+:root {
+  --font-sans: var(--font-outfit); /* use Outfit globally */
+}
+
+body {
+  font-family: var(--font-sans), sans-serif;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
